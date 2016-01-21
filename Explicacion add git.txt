@@ -1,9 +1,10 @@
-Cuando requieras que un tipo de archivo no se añada automáticamente a git con el uso del comando 'add *' puedes crear un archivo llamado 
+	Cuando requieras que un tipo de archivo no se añada automáticamente a git con el uso del comando 'add *' puedes crear un archivo llamado 
 '.gitignore' en el que listes los patrones o los nombres de los archivos a considerar como exclusiones.
 Por ejemplo:
 	pico .gitignore 	#abre el archivo .gitignore con el editor de texto pico y comenzamos a escribir
 	*.sh			#el '*' indica cualquier caracter, por lo tanto este patrón especifica que cualquier archivo con la extensión .sh será ignorada
 	*.[ab]			#los corchetes indican la operación lógica 'or', es decir todos los archivos con extensión .a ó .b serán excluidos
+
 
 	
 	También se pueden hacer exclusiones de directorios con el uso del caracter '/', por ejemplo si en el archivo .gitignore escribimos 'DocumentsIgnored/', se ignorarán todos los archivos dentro de ese directorio.
